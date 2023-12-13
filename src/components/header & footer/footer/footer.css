@@ -1,0 +1,16 @@
+.footerLogo{
+    width: 50%;
+}
+
+.footerIcon{
+    width: 20%;
+    margin-top: 2%;  
+}
+
+@media only screen  and (max-width:500px ){
+    .footerIcon{
+        width: 25%;
+        margin-top: 2%;  
+    }
+}
+

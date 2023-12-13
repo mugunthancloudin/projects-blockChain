@@ -1,0 +1,7 @@
+.top{
+    left: 200px;
+    top: 100px;
+    background-color: red;
+    z-index: 1;
+    position: fixed;
+}

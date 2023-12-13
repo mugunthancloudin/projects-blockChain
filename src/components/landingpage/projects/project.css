@@ -1,0 +1,512 @@
+.projectH1 {
+  margin-top: 10%;
+  font-family:"Open Sans";
+  font-weight: 600;
+
+}
+
+/* .projectsBg{
+  background-color: rgb(248,248,248);
+} */
+
+.projectTitleH1{
+  font-family:"Open Sans";
+    font-weight: 600;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-30%);
+  }
+  50% {
+    transform: translateX(500%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.arrSpam {
+  display: inline-flex;
+  align-items: center;
+  animation: slideRight 5s linear infinite; /* Adjust the duration and easing function as needed */
+}
+
+.projectLeftImage {
+  width: 50px; /* Adjust the image width as needed */
+  height: auto;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.projectTitleContent {
+ justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .projectTitleContent {
+    margin-left: 40%;
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-20%);
+    }
+    50% {
+      transform: translateX(300%);
+    }
+    100% {
+      transform: translateX(-30%);
+    }
+  }
+}
+
+/* button for medi chain */
+
+.arrMediChainSpam{
+  display: inline-flex;
+  align-items: center;
+  animation: slideLeft 5s linear infinite;
+  transform: scaleX(-1);
+
+}
+
+@keyframes slideLeft {
+    0% {
+      transform: translateX(-5%);
+    }
+    50% {
+      transform: translateX(500%);
+    }
+    100% {
+      transform: translateX(-5%);
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    .projectTitleContent {
+      margin-left: 40%;
+    }
+  
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(-20%);
+      }
+      50% {
+        transform: translateX(300%);
+      }
+      100% {
+        transform: translateX(-30%);
+      }
+    }
+  }
+
+.container-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bt-1 bt-2 bt-3"
+      "bt-4 bt-5 bt-6";
+    position: relative;
+    perspective: 800;
+    padding: 0;
+    width: 135px;
+    height: 47px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container-button:active {
+    transform: scale(0.95);
+  }
+  
+  .custom-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+  }
+  
+  .bt-1 {
+    grid-area: bt-1;
+  }
+  
+  .bt-2 {
+    grid-area: bt-2;
+  }
+  
+  .bt-3 {
+    grid-area: bt-3;
+  }
+  
+  .bt-4 {
+    grid-area: bt-4;
+  }
+  
+  .bt-5 {
+    grid-area: bt-5;
+  }
+  
+  .bt-6 {
+    grid-area: bt-6;
+  }
+  
+  .custom-hover:hover ~ .custom-button::before {
+    background: transparent;
+  }
+  
+  .custom-hover:hover ~ .custom-button::after {
+    content: "Track Now";
+    top: -130%;
+    transform: translate(-50%, 0);
+    font-size: 34px;
+    color:rgb(15,15,46);
+  }
+  
+  .custom-button {
+    position: absolute;
+    padding: 0;
+    width: 135px;
+    height: 47px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 900;
+    border: 3px solid rgb(15,15,46);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 135px;
+    height: 47px;
+    background-color: rgb(15,15,46);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+  .custom-button::after {
+    content: "Track";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 135px;
+    height: 47px;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 47px;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  @keyframes shake {
+    0% {
+      left: 45%;
+    }
+  
+    25% {
+      left: 54%;
+    }
+  
+    50% {
+      left: 48%;
+    }
+  
+    75% {
+      left: 52%;
+    }
+  
+    100% {
+      left: 50%;
+    }
+  }
+  
+
+
+ /* Doc verication project button */
+  .doc-button,.doc-button::after {
+    margin-top: 5%;
+    padding: 10px 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .doc-button::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'Verify Now';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  .doc-button:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px rgb(2,132,219), 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid rgb(2,132,219);
+  }
+  
+  .doc-button:hover {
+    text-shadow: -1px -1px 0px rgb(2,132,219), 1px 1px 0px #E94BE8;
+  }
+  
+  .doc-button:hover {
+    background-color: transparent;
+    border: 1px solid rgb(2,132,219);
+    box-shadow: 0px 10px 10px -10px rgb(2,132,219)
+  }
+  
+  @keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+  
+  /* BullsCallButton.css */
+
+.bullsCall-button {
+    position: relative;
+    width: 11em;
+    height: 4em;
+    outline: none;
+    transition: 0.1s;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: 900;
+    color:black;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  
+  .bullsCall-clip {
+    --color: rgb(15,15,46);
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 5px double var(--color);
+    box-shadow: inset 0px 0px 15px rgb(15,15,46);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  
+  .bullsCall-arrow {
+    position: absolute;
+    transition: 0.2s;
+    background-color: rgb(15,15,46);
+    width: 11%;
+    height: 30%;
+  }
+  
+  .bullsCall-left-arrow {
+    left: -13.5%;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  }
+  
+  .bullsCall-right-arrow {
+    clip-path: polygon(100% 49%, 0 0, 0 100%);
+    left: 108%;
+  }
+  
+  .bullsCall-button:hover .bullsCall-right-arrow {
+    background-color:rgb(80,58,108);
+    left: -15%;
+    animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+  }
+  
+  .bullsCall-button:hover .bullsCall-left-arrow {
+    background-color:rgb(80,58,108);
+    left: 103%;
+    animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+  }
+  
+  .bullsCall-corner {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    background-color: #2761c3;
+    box-shadow: inset 1px 1px 8px #2781c3;
+    transform: scale(1) rotate(45deg);
+    transition: 0.2s;
+  }
+  
+  .bullsCall-right-top {
+    top: -1.98em;
+    left: 91%;
+  }
+  
+  .bullsCall-left-top {
+    top: -1.96em;
+    left: -3.0em;
+  }
+  
+  .bullsCall-left-bottom {
+    top: 2.10em;
+    left: -2.15em;
+  }
+  
+  .bullsCall-right-bottom {
+    top: 45%;
+    left: 88%;
+  }
+  
+  .bullsCall-button:hover .bullsCall-left-top {
+    animation: 0.1s ease-in-out 0.05s both changeColor8,
+      0.2s linear 0.4s both lightEffect8;
+  }
+  
+  .bullsCall-button:hover .bullsCall-right-top {
+    animation: 0.1s ease-in-out 0.15s both changeColor8,
+      0.2s linear 0.4s both lightEffect8;
+  }
+  
+  .bullsCall-button:hover .bullsCall-right-bottom {
+    animation: 0.1s ease-in-out 0.25s both changeColor8,
+      0.2s linear 0.4s both lightEffect8;
+  }
+  
+  .bullsCall-button:hover .bullsCall-left-bottom {
+    animation: 0.1s ease-in-out 0.35s both changeColor8,
+      0.2s linear 0.4s both lightEffect8;
+  }
+  
+  .bullsCall-button:hover .bullsCall-corner {
+    transform: scale(1.25) rotate(45deg);
+  }
+  
+  .bullsCall-button:hover .bullsCall-clip {
+    animation: 0.2s ease-in-out 0.55s both greenLight8;
+    --color: rgb(80,58,108);
+  }
+  
+  @keyframes changeColor8 {
+    from {
+      background-color: #2781c3;
+    }
+  
+    to {
+      background-color: #27c39f;
+    }
+  }
+  
+  @keyframes lightEffect8 {
+    from {
+      box-shadow: 1px 1px 5px #27c39f;
+    }
+  
+    to {
+      box-shadow: 0 0 2px #27c39f;
+    }
+  }
+  
+  @keyframes greenLight8 {
+    from {
+    }
+  
+    to {
+      box-shadow: inset 0px 0px 32px #27c39f;
+    }
+  }
+  
+  @keyframes leftArrow8 {
+    from {
+      transform: translate(0px);
+    }
+  
+    to {
+      transform: translateX(10px);
+    }
+  }
+  
+  @keyframes rightArrow8 {
+    from {
+      transform: translate(0px);
+    }
+  
+    to {
+      transform: translateX(-10px);
+    }
+  }
+  

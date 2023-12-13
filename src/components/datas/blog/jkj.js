@@ -1,0 +1,1 @@
+import "../../../../public/images/process/support and maintance.svg"

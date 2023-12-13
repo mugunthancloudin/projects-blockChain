@@ -1,0 +1,35 @@
+.contactBg{
+    background-color: rgb(241,241,241);
+}
+
+.contactBtn{
+    margin-top: 2%;
+    background-color: rgb(1,32,67);
+    color: white;
+}
+
+.vline {
+    border-left: 1px solid #000; 
+    height: 100px; 
+    margin: 0 10px; 
+  }
+
+  .headColor{
+    color: rgb(1,32,67)
+  }
+
+  .contact_h3{
+    font-family: Roboto ;
+    font-weight: 700;
+    margin-top: 13%;
+  }
+
+  .contact_h2{
+    font-family: Roboto ;
+    font-weight: 700;
+    margin-top: 5%;
+  }
+
+  .icon{
+    font-size: px;
+  }

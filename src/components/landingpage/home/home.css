@@ -1,0 +1,28 @@
+.homeBg{
+    background: url("../../assets/landingPage/Home/homegiff.gif") center/cover  no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.homeH1{
+    margin-top: 35%;
+}
+
+.homeH4{
+    margin-top: 5%;
+    line-height: 30px;
+}
+
+.homeBtn{
+    background-color: orange;
+    padding: 2%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 10px;
+}
+/* 
+.homeSpan{
+    font-size: x-large;
+    padding-top: 50%;
+} */

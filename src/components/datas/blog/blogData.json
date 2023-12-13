@@ -1,0 +1,73 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "title": "Bull's Call",
+      "image": "./images/blog/bullsCall.png",
+      "info": "How to earn money by predicting the price of crypto ?",
+      "description": "By predicting price of the crypto either going up or down, players can earn more crypto.Companies recruiting individuals save their time verifying documents."
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "title": "Medi_chain",
+      "image": "./images/blog/mediChain.png",
+      "info": " How to store patient records which is tamper-proof and easy to access?",
+      "description": "Medical records can be viewed and edited. Doctors can access patient details with ease, data won't get hacked or lost. The underlying technology is Blockchain IPFS which stores all personal details and health records."
+    },
+    {
+      "id": 3,
+      "name": "Product 2",
+      "title": "Document_verification",
+      "image": "./images/blog/docVerification.png",
+      "info": "How to check the integrity of an individual's documents?",
+      "description": "Documents of individuals get uploaded in IPFS and their details are stored in the blockchain. Verifier verify those documents based on duplicity and misinformation.There is no maximum limit for winning reward."
+    }
+  ],
+
+  "process": [
+    {
+      "id": 1,
+      "title": "Requirement",
+      "description": "We follow the first and foremost priority of gathering requirements, resources, and information to begin our project.",
+      "icon": "./images/process/requirement gathering.svg"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design",
+      "description": "We create catchy and charming designs with the latest tools of designing to make it a best user-friendly experience.",
+      "icon": "./images/process/ui ux.svg"
+    },
+    {
+      "id": 3,
+      "title": "Prototype",
+      "description": "After designing, you will get your prototype, which will be sent ahead for the development process for the product.",
+      "icon": "./images/process/prototype.svg"
+    },
+    {
+      "id": 4,
+      "title": "Development",
+      "description": "Development of mobile application/web/blockchain started using latest tools and technologies with transparency.",
+      "icon": "./images/process/appdevelopment.svg"
+    },
+    {
+      "id": 5,
+      "title": "Quality Assurance",
+      "description": "Hyperlink values quality and provides 100% bug-free application with no compromisation in it.",
+      "icon": "./images/process/Quality assurance.svg"
+    },
+    {
+      "id": 6,
+      "title": "Deployment",
+      "description": "After trial and following all processes, your app is ready to launch on the App store or Play Store.",
+      "icon": "./images/process/depolyment.svg"
+    },
+    {
+      "id": 7,
+      "title": "Support",
+      "description": "Our company offers you all support and the team is answerable to every query after deployment.",
+      "icon": "./images/process/support and maintance.svg"
+    }
+  ]
+}
